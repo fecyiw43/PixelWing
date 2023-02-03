@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "823776792462",
+    "firebase_url": "https://pixel-wing-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "pixel-wing",
+    "storage_bucket": "pixel-wing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823776792462:android:029329665bcb4626fd5edf",
+        "android_client_info": {
+          "package_name": "com.example.pixel_wings"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823776792462-4k9n7guabgnt2u1cbtn5f04dcmjgrgab.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pixel_wings",
+            "certificate_hash": "e89743b216d33845f0a6f88f9b371ace07fae0f7"
+          }
+        },
+        {
+          "client_id": "823776792462-5bucuofjtq8er5s93o3kmep21hmebskf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXwXUh90chUT-JqaLQXocBJBBya-go4lQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823776792462-5bucuofjtq8er5s93o3kmep21hmebskf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "823776792462-a0t3lnv7ugu6trm7bblv1gr60d1s30n0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.pixelWings"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

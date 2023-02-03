@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>823776792462-a0t3lnv7ugu6trm7bblv1gr60d1s30n0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.823776792462-a0t3lnv7ugu6trm7bblv1gr60d1s30n0</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>823776792462-4k9n7guabgnt2u1cbtn5f04dcmjgrgab.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAxr0n2JfX_Id2BL-Si3WZKUroIprilV9o</string>
+	<key>GCM_SENDER_ID</key>
+	<string>823776792462</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.pixelWings</string>
+	<key>PROJECT_ID</key>
+	<string>pixel-wing</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pixel-wing.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:823776792462:ios:0fd8d7e6ff885e2afd5edf</string>
+</dict>
+</plist>

@@ -1,0 +1,44 @@
+name: pixelwing
+description: A game similar to flappy bird
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+  flutter: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flame: ^1.6.0
+  orientation: ^1.3.0
+  flame_audio: ^1.3.5
+  firebase_auth:
+  firebase_core:
+  firebase_database:
+  cloud_firestore:
+  google_sign_in:
+  json_annotation:
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flame_lint: ^0.0.1
+  flutter_launcher_icons: ^0.11.0
+  build_runner:
+  json_serializable:
+
+flutter_icons:
+  android: "pixel_wing"
+  ios: true
+  image_path: "assets/logos/pixel_wings.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    -  assets/images/
+    -  assets/audio/
+    -  assets/logos/
