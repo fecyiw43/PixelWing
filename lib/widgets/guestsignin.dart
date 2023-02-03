@@ -14,7 +14,7 @@ class GuestSignInButton extends StatelessWidget {
       child: OutlinedButton(
         style: ButtonStyle(
           backgroundColor:
-              MaterialStateProperty.all(const Color.fromARGB(255, 59, 59, 59)),
+              MaterialStateProperty.all(Color.fromARGB(255, 134, 134, 134)),
           shape: MaterialStateProperty.all(
             RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(40),

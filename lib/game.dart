@@ -102,7 +102,7 @@ class PixelWing extends FlameGame with TapDetector, HasCollisionDetection {
     }
   }
 
-  // Gameover (needs to implement an endscreen and a restart screen)
+  // Gameover
   void gameover(bool sound) {
     overlays.remove(PauseButton.id);
     if (sound) {

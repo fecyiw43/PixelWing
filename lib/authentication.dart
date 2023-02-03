@@ -4,9 +4,6 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
-// ignore: unused_import
-import 'main.dart';
-
 class Authentication {
   static Future<FirebaseApp> initializeFirebase({
     required BuildContext context,
@@ -14,7 +11,6 @@ class Authentication {
     final firebaseApp = await Firebase.initializeApp();
 
     // final user = FirebaseAuth.instance.currentUser;
-    // print('current user is: $user');
 
     // if (user != null) {
     //   Navigator.of(context).pushReplacement(
@@ -85,7 +81,6 @@ class Authentication {
   }
 
   static Future<void> signOut({required BuildContext context}) async {
-    print('signed out');
     final googleSignIn = GoogleSignIn();
 
     try {
