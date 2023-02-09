@@ -19,10 +19,10 @@ workflows:
       - name: Build AAB with Flutter
         script: | 
           flutter build appbundle --release
-      artifacts:
-        - build/**/outputs/**/*.aab
-        - build/**/outputs/**/mapping.txt
-        - flutter_drive.log
+    artifacts:
+      - build/**/outputs/**/*.aab
+      - build/**/outputs/**/mapping.txt
+      - flutter_drive.log
     # publishing:
     #   email:
     #     recipients:
