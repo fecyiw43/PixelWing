@@ -1,7 +1,7 @@
 name: pixelwing
 description: A game similar to flappy bird
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
-version: 1.0.0+1
+version: 1.0.0+3
 
 environment:
   sdk: ">=2.17.0 <3.0.0"
