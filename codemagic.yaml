@@ -1,28 +1,64 @@
 workflows:
-  android-workflow:
-    name: Android Workflow
+  ios-workflow:
+    name: iOS Workflow
     max_build_duration: 120
+    integrations:
+      app_store_connect: codemagic
     environment:
-      android_signing:
-        - upload-keystore
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: io.codemagic.fluttersample
       vars:
-        PACKAGE_NAME: "io.codemagic.flutteryaml" # <-- Put your package name here
-        GOOGLE_PLAY_TRACK: "alpha"
+        APP_ID: fecyiw43@gmail.com
       flutter: stable
     scripts:
-      - name: Set up local.properties
+      - name: Set up code signing settings on Xcode project
         script: | 
-          echo "flutter.sdk=$HOME/programs/flutter" > "$CM_BUILD_DIR/android/local.properties"
+          xcode-project use-profiles
       - name: Get Flutter packages
         script: | 
           flutter packages pub get
-      - name: Build AAB with Flutter
+      - name: Install pods
         script: | 
-          flutter build appbundle --release
+          find . -name "Podfile" -execdir pod install \;
+      - name: Flutter build ipa
+        script: | 
+          flutter build ipa --release
     artifacts:
-      - build/**/outputs/**/*.aab
-      - build/**/outputs/**/mapping.txt
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
       - flutter_drive.log
+
+# workflows:
+#   android-workflow:
+#     name: Android Workflow
+#     max_build_duration: 120
+#     environment:
+#       android_signing:
+#         - upload-keystore
+#       vars:
+#         PACKAGE_NAME: "io.codemagic.flutteryaml" # <-- Put your package name here
+#         GOOGLE_PLAY_TRACK: "alpha"
+#       flutter: stable
+#     scripts:
+#       - name: Set up local.properties
+#         script: | 
+#           echo "flutter.sdk=$HOME/programs/flutter" > "$CM_BUILD_DIR/android/local.properties"
+#       - name: Get Flutter packages
+#         script: | 
+#           flutter packages pub get
+#       - name: Build AAB with Flutter
+#         script: | 
+#           flutter build appbundle --release
+#     artifacts:
+#       - build/**/outputs/**/*.aab
+#       - build/**/outputs/**/mapping.txt
+#       - flutter_drive.log
+
+
+
+
+
     # publishing:
     #   email:
     #     recipients:
